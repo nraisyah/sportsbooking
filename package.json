@@ -4,7 +4,7 @@
   "description": "for assignment itt626",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app --"
+    "start": "nodemon --app app.js"
   },
   "author": "BBAH",
   "license": "ISC",
