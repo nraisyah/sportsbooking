@@ -54,9 +54,8 @@
       else if (id === "" && ps === ""){
         window.alert("ID and/or Password fields cannot be empty");
       }
-      else {
-        window.location.replace("home.ejs");
-      }
+      else if (id !== "12345" && ps !== "bad123") {
+        window.alert("ID and/or Password is wrong");}
       return false;
     }
   </script>
