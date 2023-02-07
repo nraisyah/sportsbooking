@@ -35,7 +35,7 @@
     <!-- (B) MAIN -->
     <main id="pgmain">
     
-        <form action="admindash.ejs" method="post">
+        <form id="form">
             <label>Name:</label><input type="text" name="Name"><br><br>
             <label>Student/Staff ID:</label><input type="text" name="SID"><br><br>
             <label>Phone Number:</label><input type="text" name="PhoneNum"><br><br>
@@ -59,3 +59,11 @@
     </main>
     </body>
 </html>
+
+<script>
+    document.getElementById("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Data submitted");
+    window.location.href = "editBook.ejs";
+  });
+</script>
