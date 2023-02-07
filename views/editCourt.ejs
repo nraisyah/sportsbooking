@@ -35,7 +35,7 @@
     <!-- (B) MAIN -->
     <main id="pgmain">
     
-        <form action="admindash.ejs" method="post">
+      <form id="form">
             <label>Court:
                 <select name="Court">
                     <option value="SCA">Shah Alam Sports Complex A</option>
@@ -55,3 +55,11 @@
     </main>
     </body>
 </html>
+
+<script>
+  document.getElementById("form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  alert("Data submitted");
+  window.location.href = "editCourt.ejs";
+});
+</script>
